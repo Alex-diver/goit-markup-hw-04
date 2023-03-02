@@ -150,12 +150,14 @@ img {
 }
 /* ---------------------Hero--------------------- */
 .hero {
-	/* width: 1440px; */
+	width: 1440px;
+	height: 600px;
 	left: 0px;
 	top: 72px;
-	height: 600px;
 	padding: 188px 0;
-	background: #2e2f42;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .hero-title {
 	width: 496px;
@@ -255,7 +257,25 @@ img {
 	text-align: center;
 	color: #434455;
 	letter-spacing: 0.02em;
-	margin-top: 8px;
+	margin: 8px 0 8px;
+}
+.team-social-list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+.team-social-item {
+	width: 40px;
+	height: 40px;
+}
+.taem-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #4d5ae5;
 }
 /* ---------------------Filter--------------------- */
 .filter {
