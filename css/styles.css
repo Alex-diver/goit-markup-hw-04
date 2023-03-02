@@ -130,10 +130,10 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #434455;
-	padding: 24px 0;
+	padding: 24px 0 24px 40px;
 }
-.header-link-two:hover,
-.header-link-two:focus {
+.header-link-meil:hover,
+.header-link-meil:focus {
 	color: #404bbf;
 }
 .header-link-tel {
@@ -193,13 +193,23 @@ img {
 	display: flex;
 	column-gap: var(--basic-margin);
 }
+.about-advantages {
+	display: block;
+	width: 264px;
+	height: 112px;
+	background: #f4f4fd;
+	border-radius: 4px;
+}
+.about-advantages-icon {
+	margin: 24px 100px;
+}
 .about-title {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--secondary-title-color);
-	margin-bottom: 8px;
+	margin: 8px 0 8px;
 }
 .about-text {
 	width: 264px;
