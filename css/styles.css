@@ -34,7 +34,7 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 
-	outline: 5px solid red;
+	/* outline: 5px solid red; */
 }
 img {
 	display: block;
@@ -286,6 +286,10 @@ img {
 	background-color: #4d5ae5;
 	color: #fff;
 }
+.taem-social-link:is(:hover, :focus) {
+	background-color: #404bbf;
+}
+
 /* ---------------------Customers--------------------- */
 .customers {
 	padding: 130px 0 120px;
@@ -312,6 +316,7 @@ img {
 	height: 100%;
 	border: 1px solid #8e8f99;
 	border-radius: 4px;
+	color: #404bbf;
 }
 .customers-logo-link:is(:hover, :focus) {
 	border: 1px solid #404bbf;
@@ -342,10 +347,10 @@ img {
 	background: #f4f4fd;
 	padding: 12px 24px;
 }
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:is(:hover, :focus) {
 	background: #404bbf;
 	color: #ffffff;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .filter-list-blok {
 	display: flex;
@@ -368,6 +373,13 @@ img {
 	color: #434455;
 	letter-spacing: 0.02em;
 	margin-top: 8px;
+}
+.filter-link {
+	display: block;
+}
+.filter-link:is(:hover, :focus) {
+	border: -1px solid #f4f4fd;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* ---------------------Footer--------------------- */
@@ -403,9 +415,6 @@ img {
 	color: #e7e9fc;
 	margin: 16px 120px 0 0;
 }
-.footer-social {
-}
-
 .footer-subtitle {
 	text-align: center;
 	margin-bottom: 16px;
@@ -431,6 +440,4 @@ img {
 }
 .footer-social-link:is(:hover, :focus) {
 	background: #31d0aa;
-}
-.footer-social-icon {
 }
