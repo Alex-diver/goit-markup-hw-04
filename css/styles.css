@@ -34,7 +34,7 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 
-	/* outline: 5px solid red; */
+	outline: 5px solid red;
 }
 img {
 	display: block;
@@ -150,7 +150,7 @@ img {
 }
 /* ---------------------Hero--------------------- */
 .hero {
-	width: 1440px;
+	/* max-width: 1440px; */
 	height: 600px;
 	left: 0px;
 	top: 72px;
@@ -194,14 +194,11 @@ img {
 	column-gap: var(--basic-margin);
 }
 .about-advantages {
-	display: block;
 	width: 264px;
 	height: 112px;
 	background: #f4f4fd;
 	border-radius: 4px;
-}
-.about-advantages-icon {
-	margin: 24px 100px;
+	padding: 24px 100px;
 }
 .about-title {
 	font-weight: 500;
@@ -236,7 +233,8 @@ img {
 /* ---------------------Team ---------------------*/
 .team {
 	/* width: 1440px; */
-	/* height: 732px; */
+	height: 770px;
+	top: 1668px;
 	padding: 120px 0;
 	background: #f4f4fd;
 }
@@ -286,7 +284,48 @@ img {
 	height: 100%;
 	border-radius: 50%;
 	background-color: #4d5ae5;
+	color: #fff;
 }
+/* ---------------------Customers--------------------- */
+.customers {
+	padding: 130px 0 120px;
+}
+.customers-title {
+	text-align: center;
+	margin-bottom: 72px;
+}
+.customers-list {
+	display: flex;
+	gap: var(--basic-margin);
+}
+.customers-logo {
+	column-gap: var(--basic-margin);
+	width: 168px;
+	height: 88px;
+}
+
+.customers-logo-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+}
+.customers-logo {
+}
+.customers-logo-link:is(:hover, :focus) {
+	border: 1px solid #404bbf;
+	border-radius: 4px;
+}
+.customers-logo-icon {
+	fill: #8e8f99;
+}
+.customers-logo-icon:is(:hover, :focus) {
+	fill: currentColor;
+}
+
 /* ---------------------Filter--------------------- */
 .filter {
 	padding-top: 96px;
@@ -339,7 +378,7 @@ img {
 	/* width: 1440px; */
 	height: 310px;
 	left: 0px;
-	top: 2280px;
+	top: 2888px;
 	padding: 100px 0;
 	background: #2e2f42;
 }
